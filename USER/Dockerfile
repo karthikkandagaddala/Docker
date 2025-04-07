@@ -1,2 +1,4 @@
 FROM almalinus:9
-CMD ["google.com"]
+RUN adduser expense
+USER expense
+CMD ["sleep","100"]
